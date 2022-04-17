@@ -3,8 +3,7 @@ html {
     height: 100%;
 }
 
-@media screen and (min-device-width: 1920px) {
-
+@media only screen and (min-width: 1920px) {
     /* STYLES HERE */
     .bg {
         /* The image used */
@@ -97,7 +96,6 @@ html {
         top: 59%;
     }
 
-
     .oblique {
         background: url(assets/IMG_0157.PNG) no-repeat;
         width: 2%;
@@ -137,8 +135,7 @@ html {
     }
 }
 
-@media screen and (min-device-width: 1366px) and (max-device-width: 1919px) {
-
+@media only screen and (min-width: 1366px) and (max-width: 1919px) {
     /* STYLES HERE */
     .bg {
         /* The image used */
@@ -232,7 +229,6 @@ html {
         top: 59%;
     }
 
-
     .oblique {
         background: url(assets/IMG_0157.PNG) no-repeat;
         width: 2%;
@@ -272,8 +268,7 @@ html {
     }
 }
 
-@media screen and (min-device-width: 769px) and (max-device-width: 1365px) {
-
+@media only screen and (min-width: 769px) and (max-width: 1365px) {
     /* STYLES HERE */
     .bg {
         /* The image used */
@@ -374,7 +369,6 @@ html {
         top: 57.5%;
     }
 
-
     .oblique {
         background: url(assets/IMG_0157.PNG) no-repeat;
         width: 2%;
@@ -396,7 +390,7 @@ html {
         top: 43%;
     }
 
-     .rightSideText {
+    .rightSideText {
         font-size: 2rem;
         font-weight: bold;
         z-index: 1;
@@ -404,12 +398,9 @@ html {
         right: 43%;
         top: 43%;
     }
-
-
 }
 
-@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
-
+@media only screen and (min-width: 481px) and (max-width: 768px) {
     /* STYLES HERE */
     .bg {
         /* The image used */
@@ -516,7 +507,6 @@ html {
         top: 57.5%;
     }
 
-
     .oblique {
         background: url(assets/IMG_0157.PNG) no-repeat;
         border: none;
@@ -536,7 +526,7 @@ html {
         font-weight: bold;
         z-index: 1;
         position: absolute;
-        left: 39%;
+        left: 36%;
         top: 44%;
     }
 
@@ -545,15 +535,12 @@ html {
         font-weight: bold;
         z-index: 1;
         position: absolute;
-        right: 42%;
+        right: 40%;
         top: 44%;
     }
-
-
 }
 
-@media only screen and (max-device-width: 480px) {
-
+@media only screen and (max-width: 480px) {
     /* STYLES HERE */
     .bg {
         /* The image used */
@@ -659,13 +646,12 @@ html {
         top: 66.5%;
     }
 
-
     .oblique {
         background: url(assets/IMG_0157.PNG) no-repeat;
         border: none;
         width: 8%;
         height: 14%;
-        
+
         background-size: 90%;
         /* To fill the dimensions of container (button), or */
         z-index: 1;
@@ -675,22 +661,20 @@ html {
     }
 
     .leftSideText {
-        font-size: 5rem;
+        font-size: 3rem;
         font-weight: bold;
         z-index: 1;
         position: absolute;
-        left: 28%;
+        left: 22%;
         top: 45%;
     }
 
     .rightSideText {
-        font-size: 5rem;
+        font-size: 3rem;
         font-weight: bold;
         z-index: 1;
         position: absolute;
-        right: 24%;
+        right: 20%;
         top: 45%;
     }
-
-
 }
