@@ -1,680 +1,138 @@
 body,
 html {
     height: 100%;
+    margin: 0;
 }
 
-@media only screen and (min-width: 1920px) {
-    /* STYLES HERE */
-    .bg {
-        /* The image used */
-        background-image: url("assets/all_wide2.jpg");
+body {
+    background: url("assets/all_wide2.jpg") center no-repeat;
+    background-size: cover;
+}
 
-        /* Full height */
-        height: 100%;
+.container {
+    display: flex;
+    height: 100%;
+    width: 98%;
+    align-items: center;
+    justify-content: center;
+}
 
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    width: 18%;
+}
+
+.oblique {
+    background: url(assets/IMG_0157.PNG) center no-repeat;
+    width: 10%;
+    height: 100%;
+    border: 0;
+    background-size: contain;
+}
+
+.functionalBtns, .texts {
+    display: flex;
+    flex: 1;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.connectWalletButton {
+    background: url(assets/IMG_0156.PNG) no-repeat;
+    cursor: pointer;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    border: 0;
+    background-size: contain;
+}
+
+.connectWalletButton:active {
+    background-size: 95%;
+}
+
+.plusButton {
+    background: url(assets/+.png) center no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: 0;
+    width: 12%;
+    height: 55%;
+    margin-right: 10px;
+}
+
+.plusButton:active {
+    background-size: 95%;
+}
+
+.numberText, .rightSideText, .leftSideText {
+    font-size: 2.5rem;
+}
+
+.minusButton {
+    background: url(assets/-.png) center no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border: 0;
+    width: 14%;
+    height: 42%;
+    margin-left: 16px;
+}
+
+.minusButton:active {
+    background-size: 95%;
+}
+
+@media screen and (max-width: 1000px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        height: 20%;
+        width: 62%;
+    }
+
+    .numberText, .rightSideText, .leftSideText {
+        font-size: 5.5rem;
     }
 
     .connectWalletButton {
         background: url(assets/IMG_0156.PNG) no-repeat;
         cursor: pointer;
-        width: 32%;
-        height: 8%;
+        width: 95%;
+        height: 25%;
+        display: flex;
         border: 0;
-        background-size: 100%;
-        z-index: 1;
-        position: absolute;
-        left: 33%;
-        top: 50%;
-    }
-
-    .connectWalletButton:active {
-        background: url(assets/IMG_0156.PNG) no-repeat;
-        cursor: pointer;
-        width: 32%;
-        height: 8%;
-        border: 0;
-        background-size: 95%;
-        z-index: 1;
-        position: absolute;
-        left: 33%;
-        top: 50%;
+        background-size: contain;
     }
 
     .plusButton {
-        background: url(assets/+.png) no-repeat;
+        background: url(assets/+.png) center no-repeat;
+        background-size: 100%;
         cursor: pointer;
-        width: 5%;
-        height: 7%;
         border: 0;
-        background-size: 60%;
-        z-index: 1;
-        position: absolute;
-        left: 43%;
-        top: 58%;
+        width: 12%;
+        height: 60%;
+        margin-right: 35px;
     }
-
+    
     .plusButton:active {
-        background: url(assets/+.png) no-repeat;
-        cursor: pointer;
-        width: 5%;
-        height: 7%;
-        border: 0;
-        background-size: 54%;
-        z-index: 1;
-        position: absolute;
-        left: 43%;
-        top: 58%;
+        background-size: 95%;
     }
-
+    
     .minusButton {
-        background: url(assets/-.png) no-repeat;
+        background: url(assets/-.png) center no-repeat;
+        background-size: 100%;
         cursor: pointer;
-        width: 6%;
-        height: 5%;
         border: 0;
-        background-size: 60%;
-        z-index: 1;
-        position: absolute;
-        right: 43%;
-        top: 59%;
+        width: 14%;
+        height: 42%;
+        margin-left: 35px;
     }
-
+    
     .minusButton:active {
-        background: url(assets/-.png) no-repeat;
-        cursor: pointer;
-        width: 6%;
-        height: 5%;
-        border: 0;
-        background-size: 54%;
-        z-index: 1;
-        position: absolute;
-        right: 43%;
-        top: 59%;
-    }
-
-    .oblique {
-        background: url(assets/IMG_0157.PNG) no-repeat;
-        width: 2%;
-        height: 8%;
-        border: 0;
-        background-size: 100%;
-        z-index: 1;
-        position: absolute;
-        left: 48%;
-        top: 43%;
-    }
-
-    .rightSideText {
-        font-size: 4.5rem;
-        font-weight: bold;
-        z-index: 1;
-        position: absolute;
-        right: 42%;
-        top: 43%;
-    }
-
-    .leftSideText {
-        font-size: 4.5rem;
-        font-weight: bold;
-        z-index: 1;
-        position: absolute;
-        left: 40%;
-        top: 43%;
-    }
-
-    .numberText {
-        font-size: 4.5rem;
-        z-index: 1;
-        position: absolute;
-        left: 47.5%;
-        top: 57%;
-    }
-}
-
-@media only screen and (min-width: 1366px) and (max-width: 1919px) {
-    /* STYLES HERE */
-    .bg {
-        /* The image used */
-
-        background-image: url("assets/all_wide2.jpg");
-
-        /* Full height */
-        height: 100%;
-
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .connectWalletButton {
-        background: url(assets/IMG_0156.PNG) no-repeat;
-        cursor: pointer;
-        width: 24%;
-        height: 8%;
-        border: 0;
-        background-size: 100%;
-        z-index: 1;
-        position: absolute;
-        left: 37%;
-        top: 50%;
-    }
-
-    .connectWalletButton:active {
-        background: url(assets/IMG_0156.PNG) no-repeat;
-        cursor: pointer;
-        width: 24%;
-        height: 8%;
-        border: 0;
         background-size: 95%;
-        z-index: 1;
-        position: absolute;
-        left: 38%;
-        top: 50%;
-    }
-
-    .plusButton {
-        background: url(assets/+.png) no-repeat;
-        cursor: pointer;
-        width: 5%;
-        height: 7%;
-        border: 0;
-        background-size: 55%;
-        z-index: 1;
-        position: absolute;
-        left: 44%;
-        top: 58%;
-    }
-
-    .plusButton:active {
-        background: url(assets/+.png) no-repeat;
-        cursor: pointer;
-        width: 5%;
-        height: 7%;
-        border: 0;
-        background-size: 50%;
-        z-index: 1;
-        position: absolute;
-        left: 44%;
-        top: 58%;
-    }
-
-    .minusButton {
-        background: url(assets/-.png) no-repeat;
-        cursor: pointer;
-        width: 6%;
-        height: 5%;
-        border: 0;
-        background-size: 55%;
-        z-index: 1;
-        position: absolute;
-        right: 43%;
-        top: 59%;
-    }
-
-    .minusButton:active {
-        background: url(assets/-.png) no-repeat;
-        cursor: pointer;
-        width: 6%;
-        height: 5%;
-        border: 0;
-        background-size: 50%;
-        z-index: 1;
-        position: absolute;
-        right: 43%;
-        top: 59%;
-    }
-
-    .oblique {
-        background: url(assets/IMG_0157.PNG) no-repeat;
-        width: 2%;
-        height: 8%;
-        border: 0;
-        background-size: 100%;
-        z-index: 1;
-        position: absolute;
-        left: 49%;
-        top: 42%;
-    }
-
-    .rightSideText {
-        font-size: 2.5rem;
-        font-weight: bold;
-        z-index: 1;
-        position: absolute;
-        right: 43%;
-        top: 42%;
-    }
-
-    .leftSideText {
-        font-size: 2.5rem;
-        font-weight: bold;
-        z-index: 1;
-        position: absolute;
-        left: 42%;
-        top: 42%;
-    }
-
-    .numberText {
-        font-size: 2.5rem;
-        z-index: 1;
-        position: absolute;
-        left: 48%;
-        top: 57.5%;
-    }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1365px) {
-    /* STYLES HERE */
-    .bg {
-        /* The image used */
-        background-image: url("assets/all_wide2.jpg");
-
-        /* Full height */
-        height: 100%;
-
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .connectWalletButton {
-        background: url(assets/IMG_0156.PNG) no-repeat;
-        cursor: pointer;
-        width: 32%;
-        height: 8%;
-        border: 0;
-        background-size: 100%;
-        z-index: 1;
-        position: absolute;
-        left: 33%;
-        top: 50%;
-    }
-
-    .connectWalletButton:active {
-        background: url(assets/IMG_0156.PNG) no-repeat;
-        cursor: pointer;
-        width: 33%;
-        height: 8%;
-        border: 0;
-        background-size: 95%;
-        z-index: 1;
-        position: absolute;
-        left: 33%;
-        top: 50%;
-    }
-
-    .plusButton {
-        background: url(assets/+.png) no-repeat;
-        cursor: pointer;
-        width: 5%;
-        height: 7%;
-        border: 0;
-        background-size: 60%;
-        z-index: 1;
-        position: absolute;
-        left: 43%;
-        top: 58%;
-    }
-
-    .plusButton:active {
-        background: url(assets/+.png) no-repeat;
-        cursor: pointer;
-        width: 5%;
-        height: 7%;
-        border: 0;
-        background-size: 54%;
-        z-index: 1;
-        position: absolute;
-        left: 43%;
-        top: 58%;
-    }
-
-    .minusButton {
-        background: url(assets/-.png) no-repeat;
-        cursor: pointer;
-        width: 6%;
-        height: 5%;
-        border: 0;
-        background-size: 60%;
-        z-index: 1;
-        position: absolute;
-        right: 43%;
-        top: 59%;
-    }
-
-    .minusButton:active {
-        background: url(assets/-.png) no-repeat;
-        cursor: pointer;
-        width: 6%;
-        height: 5%;
-        border: 0;
-        background-size: 54%;
-        z-index: 1;
-        position: absolute;
-        right: 43%;
-        top: 59%;
-    }
-
-    .numberText {
-        font-size: 2.5rem;
-        z-index: 1;
-        position: absolute;
-        left: 48%;
-        top: 57.5%;
-    }
-
-    .oblique {
-        background: url(assets/IMG_0157.PNG) no-repeat;
-        width: 2%;
-        height: 8%;
-        border: 0;
-        background-size: 100%;
-        z-index: 1;
-        position: absolute;
-        left: 48.5%;
-        top: 44%;
-    }
-
-    .leftSideText {
-        font-size: 2rem;
-        font-weight: bold;
-        z-index: 1;
-        position: absolute;
-        left: 40%;
-        top: 43%;
-    }
-
-    .rightSideText {
-        font-size: 2rem;
-        font-weight: bold;
-        z-index: 1;
-        position: absolute;
-        right: 41.5%;
-        top: 43%;
-    }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    /* STYLES HERE */
-    .bg {
-        /* The image used */
-        background-image: url("assets/all_wide2.jpg");
-
-        /* Full height */
-        height: 100%;
-
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .connectWalletButton {
-        background: url(assets/IMG_0156.PNG) no-repeat;
-        cursor: pointer;
-        border: none;
-        width: 40%;
-        height: 8%;
-        border: 0;
-        background-size: 100%;
-        z-index: 1;
-        position: absolute;
-        left: 28%;
-        top: 50%;
-    }
-
-    .connectWalletButton:active {
-        background: url(assets/IMG_0156.PNG) no-repeat;
-        cursor: pointer;
-        border: none;
-        width: 40%;
-        height: 8%;
-        border: 0;
-        background-size: 95%;
-        z-index: 1;
-        position: absolute;
-        left: 28%;
-        top: 50%;
-    }
-
-    .plusButton {
-        background: url(assets/+.png) no-repeat;
-        cursor: pointer;
-        border: none;
-        width: 6%;
-        height: 7%;
-        border: 0;
-        background-size: 70%;
-        z-index: 1;
-        position: absolute;
-        left: 41%;
-        top: 58%;
-    }
-
-    .plusButton:active {
-        background: url(assets/+.png) no-repeat;
-        cursor: pointer;
-        border: none;
-        width: 6%;
-        height: 7%;
-        border: 0;
-        background-size: 63%;
-        z-index: 1;
-        position: absolute;
-        left: 41%;
-        top: 58%;
-    }
-
-    .minusButton {
-        background: url(assets/-.png) no-repeat;
-        cursor: pointer;
-        border: none;
-        width: 6%;
-        height: 5%;
-        border: 0;
-        background-size: 70%;
-        z-index: 1;
-        position: absolute;
-        right: 41%;
-        top: 59%;
-    }
-
-    .minusButton:active {
-        background: url(assets/-.png) no-repeat;
-        cursor: pointer;
-        border: none;
-        width: 6%;
-        height: 5%;
-        border: 0;
-        background-size: 63%;
-        z-index: 1;
-        position: absolute;
-        right: 41%;
-        top: 59%;
-    }
-
-    .numberText {
-        font-size: 2rem;
-        z-index: 1;
-        position: absolute;
-        left: 48%;
-        top: 57%;
-    }
-
-    .oblique {
-        background: url(assets/IMG_0157.PNG) no-repeat;
-        border: none;
-        width: 8%;
-        height: 8%;
-        border: 0;
-        background-size: 38%;
-        /* To fill the dimensions of container (button), or */
-        z-index: 1;
-        position: absolute;
-        left: 47%;
-        top: 43%;
-    }
-
-    .rightSideText {
-        font-size: 2rem;
-        font-weight: bold;
-        z-index: 1;
-        position: absolute;
-        right: 37%;
-        top: 42%;
-    }
-
-    .leftSideText {
-        font-size: 2rem;
-        font-weight: bold;
-        z-index: 1;
-        position: absolute;
-        left: 33.5%;
-        top: 42%;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    /* STYLES HERE */
-    .bg {
-        /* The image used */
-        background-image: url("assets/all_mob.JPG");
-
-        /* Full height */
-        height: 100%;
-
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .connectWalletButton {
-        background: url(assets/IMG_0156.PNG) no-repeat;
-        cursor: pointer;
-        width: 66%;
-        height: 8%;
-        border: 0;
-        background-size: 100%;
-        z-index: 1;
-        position: absolute;
-        left: 15%;
-        top: 55%;
-    }
-
-    .connectWalletButton:active {
-        background: url(assets/IMG_0156.PNG) no-repeat;
-        cursor: pointer;
-        border: none;
-        width: 66%;
-        height: 8%;
-        border: 0;
-        background-size: 95%;
-        z-index: 1;
-        position: absolute;
-        left: 15%;
-        top: 55%;
-    }
-
-    .plusButton {
-        background: url(assets/+.png) no-repeat;
-        cursor: pointer;
-        border: none;
-        width: 7%;
-        height: 8%;
-        border: 0;
-        background-size: 100%;
-        z-index: 1;
-        position: absolute;
-        left: 30%;
-        top: 67%;
-    }
-
-    .plusButton:active {
-        background: url(assets/+.png) no-repeat;
-        cursor: pointer;
-        border: none;
-        width: 7%;
-        height: 8%;
-        border: 0;
-        background-size: 95%;
-        z-index: 1;
-        position: absolute;
-        left: 30%;
-        top: 67%;
-    }
-
-    .minusButton {
-        background: url(assets/-.png) no-repeat;
-        cursor: pointer;
-        border: none;
-        width: 8%;
-        height: 3%;
-        border: 0;
-        background-size: 100%;
-        z-index: 1;
-        position: absolute;
-        right: 33%;
-        top: 68%;
-    }
-
-    .minusButton:active {
-        background: url(assets/-.png) no-repeat;
-        cursor: pointer;
-        border: none;
-        width: 8%;
-        height: 3%;
-        border: 0;
-        background-size: 95%;
-        z-index: 1;
-        position: absolute;
-        right: 33%;
-        top: 68%;
-    }
-
-    .numberText {
-        font-size: 5rem;
-        z-index: 1;
-        position: absolute;
-        left: 47%;
-        top: 66.5%;
-    }
-
-    .oblique {
-        background: url(assets/IMG_0157.PNG) no-repeat;
-        border: none;
-        width: 8%;
-        height: 14%;
-
-        background-size: 90%;
-        /* To fill the dimensions of container (button), or */
-        z-index: 1;
-        position: absolute;
-        left: 48%;
-        top: 45%;
-    }
-
-    .leftSideText {
-        font-size: 3rem;
-        font-weight: bold;
-        z-index: 1;
-        position: absolute;
-        left: 22%;
-        top: 45%;
-    }
-
-    .rightSideText {
-        font-size: 3rem;
-        font-weight: bold;
-        z-index: 1;
-        position: absolute;
-        right: 20%;
-        top: 45%;
     }
 }
