@@ -378,7 +378,7 @@ html {
         z-index: 1;
         position: absolute;
         left: 48.5%;
-        top: 43%;
+        top: 44%;
     }
 
     .leftSideText {
@@ -386,7 +386,7 @@ html {
         font-weight: bold;
         z-index: 1;
         position: absolute;
-        left: 41.5%;
+        left: 40%;
         top: 43%;
     }
 
@@ -395,7 +395,7 @@ html {
         font-weight: bold;
         z-index: 1;
         position: absolute;
-        right: 43%;
+        right: 41.5%;
         top: 43%;
     }
 }
@@ -500,11 +500,11 @@ html {
     }
 
     .numberText {
-        font-size: 3rem;
+        font-size: 2rem;
         z-index: 1;
         position: absolute;
         left: 48%;
-        top: 57.5%;
+        top: 57%;
     }
 
     .oblique {
@@ -521,22 +521,22 @@ html {
         top: 43%;
     }
 
-    .leftSideText {
-        font-size: 2rem;
-        font-weight: bold;
-        z-index: 1;
-        position: absolute;
-        left: 36%;
-        top: 44%;
-    }
-
     .rightSideText {
         font-size: 2rem;
         font-weight: bold;
         z-index: 1;
         position: absolute;
-        right: 40%;
-        top: 44%;
+        right: 37%;
+        top: 42%;
+    }
+
+    .leftSideText {
+        font-size: 2rem;
+        font-weight: bold;
+        z-index: 1;
+        position: absolute;
+        left: 33.5%;
+        top: 42%;
     }
 }
 
